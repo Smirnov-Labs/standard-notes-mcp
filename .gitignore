@@ -1,0 +1,63 @@
+# --- Sensitive / decrypted data — NEVER commit ---
+# Local triage index & worklist (contains decrypted note content)
+.local/
+*.db
+*.sqlite
+*.sqlite3
+worklist*.json
+worklist*.jsonl
+index*.json
+index*.jsonl
+# Write ledger of sn-mcp (the uuid of every write). The default one lives outside the repo
+ledger*.jsonl
+# Decrypted / encrypted Standard Notes exports
+*standard-notes*backup*
+*Standard Notes*.zip
+decrypted-export/
+backups/
+# Secrets & keys
+.env
+.env.*
+*.key
+*.pem
+
+# --- Go ---
+/bin/
+/dist/
+# built cmd binaries from `go build ./...` (named after their cmd/ dir)
+/sn-mcp
+/sn-verify
+/sn-seed
+/sn-canary
+/sn-triage
+/sn-login
+/sn-export-diary
+/sn-export-ideas
+/sn-tag
+*.test
+*.out
+coverage.*
+
+# --- Node (bulk board, P5) ---
+node_modules/
+npm-debug.log*
+
+# --- Local MCP activation (derived from config/*.sample.json; may hold a demo password) ---
+/.mcp.json
+/.claude/settings.json
+
+# --- OS / editor ---
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+*.swp
+*~
+.idea/
+.vscode/
+
+# tools/ outputs (bodies JSONL) hold decrypted note text. Keep them in .local/.
+*.jsonl

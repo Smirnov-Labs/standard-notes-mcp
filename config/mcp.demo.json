@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "standard-notes": {
+      "type": "stdio",
+      "command": "./bin/sn-mcp",
+      "env": {
+        "SN_SERVER": "http://localhost:3000",
+        "SN_EMAIL": "demo@local.test",
+        "SN_PASSWORD": "demo-password-standard-notes-2026",
+        "TYPESAFE_BASE_URL": "http://127.0.0.1:11434"
+      }
+    }
+  }
+}

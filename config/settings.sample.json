@@ -1,0 +1,27 @@
+{
+  "permissions": {
+    "deny": [
+      "Read(//<DATA_PATH>/**)",
+      "Bash(//<DATA_PATH>/**)"
+    ],
+    "allow": [
+      "mcp__standard-notes__notes_search",
+      "mcp__standard-notes__notes_list",
+      "mcp__standard-notes__notes_get",
+      "mcp__standard-notes__tags_list"
+    ],
+    "ask": [
+      "mcp__standard-notes__note_edit",
+      "mcp__standard-notes__note_rename",
+      "mcp__standard-notes__note_trash",
+      "mcp__standard-notes__note_untrash",
+      "mcp__standard-notes__note_merge",
+      "mcp__standard-notes__tag_apply",
+      "mcp__standard-notes__tag_detach",
+      "mcp__standard-notes__tag_create",
+      "mcp__standard-notes__tag_rename",
+      "mcp__standard-notes__tag_trash",
+      "mcp__standard-notes__tag_merge"
+    ]
+  }
+}

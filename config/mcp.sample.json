@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "standard-notes": {
+      "type": "stdio",
+      "command": "./bin/sn-mcp",
+      "env": {
+        "SN_SESSION_REF": "sn-main",
+        "TYPESAFE_BASE_URL": "http://127.0.0.1:11434"
+      }
+    }
+  }
+}
